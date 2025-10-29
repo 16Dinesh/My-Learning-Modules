@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All About HTML Tags</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #0f172a;
+      }
+      hr {
+        margin: 30px 0;
+      }
+      .intro {
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+      }
+      table.styled-table {
+        border-collapse: collapse;
+        width: 80%;
+      }
+      table.styled-table th {
+        background-color: #0f172a;
+        color: white;
+        padding: 8px;
+      }
+      table.styled-table td {
+        padding: 8px;
+      }
+      table.styled-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      ul, ol {
+        margin-left: 20px;
+      }
+      input, select, textarea, button {
+        margin: 5px 0;
+        padding: 5px;
+      }
+      video, audio {
+        margin: 10px 0;
+        max-width: 600px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Introduction -->
+    <div>
+      <p class="intro">This file is all about HTML tags with basic styling</p>
+    </div>
+
+    <hr />
+
+    <!-- Headings -->
+    <div>
+      <p class="title" id="heading">Heading Tags — H1 to H6</p>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </div>
+
+    <hr />
+
+    <!-- Paragraph -->
+    <div>
+      <p class="title">Paragraph Tag</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        perspiciatis libero aperiam dolore,<br />
+        accusantium enim cupiditate modi voluptatum natus optio aliquam, odio
+        dolor non deserunt, vitae<br />
+        obcaecati reiciendis voluptatem! Cupiditate!
+      </p>
+      <span>used '&lt;br&gt;' tags to break the line of the para</span>
+
+      <pre>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Adipisci perspiciatis libero aperiam dolore, accusantium enim cupiditate modi
+voluptatum natus optio aliquam, odio dolor non deserunt, vitae obcaecati
+reiciendis voluptatem! Cupiditate!
+      </pre>
+      <p>used '&lt;pre&gt;' above — it preserves spaces and line breaks</p>
+    </div>
+
+    <hr />
+
+    <!-- Formatting -->
+    <div>
+      <p class="title">Formatting the text</p>
+      <p><b>Bold text</b> - '&lt;b&gt;'</p>
+      <p><strong>Strong text</strong> - '&lt;strong&gt;'</p>
+      <p><i>Italic text</i> - '&lt;i&gt;'</p>
+      <p><em>Emphasized text</em> - '&lt;em&gt;'</p>
+      <p><mark>Highlighted text</mark> - '&lt;mark&gt;'</p>
+      <p><small>Smaller text</small> - '&lt;small&gt;'</p>
+      <p><del>Deleted text</del> - '&lt;del&gt;'</p>
+      <p><ins>Inserted text</ins> - '&lt;ins&gt;'</p>
+      <p>Formula: O<sub>2</sub> - '&lt;sub&gt;'</p>
+      <p>Company<sup>®</sup> - '&lt;sup&gt;'</p>
+    </div>
+
+    <hr />
+
+    <!-- Inline Styling -->
+    <div>
+      <p class="title">Inline styling</p>
+      <p style="font-size: 1.5rem"><span>Bigger font</span></p>
+      <p><span style="color: red">Text in red</span></p>
+      <p><span style="background-color: aqua">Background color aqua</span></p>
+      <p style="background-color: grey"><span>Grey background</span></p>
+      <p style="text-align: center"><span>Centered text</span></p>
+    </div>
+
+    <hr />
+
+    <!-- Quotations & Citations -->
+    <div>
+      <p class="title">Quotations and Citations</p>
+      <blockquote cite="https://www.google.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus non
+        possimus numquam voluptate. Sequi autem, odit cumque quo, animi ab eaque
+        ea totam corrupti molestias obcaecati sint eligendi. Atque, molestias.
+      </blockquote>
+      <p>
+        Albert Einstein once said,
+        <q>Imagination is more important than knowledge.</q>
+      </p>
+      <p>
+        Reference: <cite>The Art of Computer Programming</cite> by Donald Knuth
+      </p>
+      <p>
+        The <abbr title="World Health Organization">WHO</abbr> was founded in
+        1948.
+      </p>
+      <p>
+        <address>
+          123 Main St,<br />
+          Springfield, USA<br />
+          Email:
+        </address>
+      </p>
+      <p>
+        Normal text <bdo dir="rtl">This text is right to left</bdo> Normal text
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Comments -->
+    <div>
+      <p class="title">Commenting in HTML</p>
+      <p>
+        <!-- This is a comment in HTML -->
+        Comments are not displayed in the browser.
+        <p>&lt;!-- xxxx --&gt;</p>
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Anchor Tags -->
+    <div>
+      <p class="title">Anchor Tag with attribute</p>
+      <p>
+        <a href="https://www.google.com" target="_blank">Visit Google (New tab)</a>
+      </p>
+      <p>
+        <a href="https://www.google.com" >Visit Google (same tab)</a>
+      </p>
+      <p>
+        <a href="mailto:dineshwonks@gmail.com">Click to Mail me</a>
+      </p>
+      <p>
+        <a href="#heading">Go to Heading</a> (Page Bookmark)
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Images and Image Map -->
+    <div>
+      <p class="title">Images and Image Map</p>
+      <img src="../images/download.jpg" alt="Trending Image" title="Check out this trending image!" height="200px" width="300px" >
+      <p>Image Map Example</p>
+      <img src="../images/download.jpg" alt="Trending Image" usemap="#mapimage" width="800">
+
+      <map name="mapimage">
+        <area target="_blank" title="Squidward Tentacles" href="https://en.wikipedia.org/wiki/Squidward_Tentacles" coords="718,412,494,19" shape="rect">
+        <area target="_blank" title="SpongeBob SquarePants" href="https://en.wikipedia.org/wiki/SpongeBob_SquarePants_(character)" coords="47,168,266,412" shape="rect">
+        <area target="_blank" title="Patrick Star" href="https://en.wikipedia.org/wiki/Patrick_Star" coords="281,89,463,412" shape="rect">
+      </map>
+    </div>
+
+    <hr />
+
+    <!-- Tables -->
+    <div>
+      <p class="title">Tables</p>
+
+      <p>Basic Table</p>
+      <table border="1" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Alice</td><td>25</td><td>London</td></tr>
+          <tr><td>Bob</td><td>30</td><td>New York</td></tr>
+          <tr><td>Charlie</td><td>28</td><td>Paris</td></tr>
+        </tbody>
+      </table>
+
+      <p>Styled Table</p>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Alice</td><td>25</td><td>London</td></tr>
+          <tr><td>Bob</td><td>30</td><td>New York</td></tr>
+          <tr><td>Charlie</td><td>28</td><td>Paris</td></tr>
+        </tbody>
+      </table>
+
+      <p>Table with Merged Cells</p>
+      <table border="1" cellpadding="8">
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Contact Info</th>
+        </tr>
+        <tr><td>Alice</td><td>Email</td><td>alice@example.com</td></tr>
+        <tr><td>Bob</td><td rowspan="2">Phone</td><td>+123456789</td></tr>
+        <tr><td>Charlie</td><td>+987654321</td></tr>
+      </table>
+      <p>
+        Explanation:
+        <ul>
+          <li><b>colspan="2"</b> merges two columns into one cell.</li>
+          <li><b>rowspan="2"</b> merges two rows into one cell.</li>
+        </ul>
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Lists -->
+    <div>
+      <p class="title">Lists</p>
+      <p>Unordered List</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <p>Ordered List</p>
+      <ol>
+        <li>Setup Project</li>
+        <li>Write HTML</li>
+        <li>Style with CSS</li>
+        <li>Add JavaScript</li>
+      </ol>
+    </div>
+
+    <hr />
+
+    <!-- Forms -->
+    <div>
+      <p class="title">Forms</p>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <hr />
+
+    <!-- Multimedia -->
+    <div>
+      <p class="title">Multimedia</p>
+      <p>Video Example</p>
+      <video controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <p>Audio Example</p>
+      <audio controls>
+        <source src="https://actions.google.com/sounds/vl/alarms/alarm_clock.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+  </body>
+</html>

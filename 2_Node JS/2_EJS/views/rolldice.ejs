@@ -1,0 +1,9 @@
+<%- include("includes/header.ejs") %>
+<body>
+    <!-- <h1> Dice Value : <%=  //Math.floor(Math.random() * 6 ) + 1 %></h1> -->
+    <h1>Your Dice value got : <%= diceVal %> </h1>
+    <% if(diceVal == 6 ) { %>
+        <h2>Noice! Roll Again</h2>
+    <%  } %>
+</body>
+</html>

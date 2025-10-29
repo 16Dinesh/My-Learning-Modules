@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>CSS Cheat Sheet</h1>
+    <nav>
+      <a href="#background">Background</a>
+      <a href="#border">Border</a>
+      <a href="#margin">Margin</a>
+      <a href="#padding">Padding</a>
+      <a href="#boxmodel">Box Model</a>
+      <a href="#text">Text & Font</a>
+      <a href="#lists">Lists</a>
+      <a href="#tables">Tables</a>
+      <a href="#links">Links</a>
+      <a href="#display">Display & Position</a>
+      <a href="#pseudo">Pseudo</a>
+      <a href="#nav">Navbar</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="background">
+      <h2>Background</h2>
+      <pre><code class="language-css">background-color: teal;</code></pre>
+      <div class="example bg-color">Example</div>
+      <pre><code class="language-css">background-image: url("https://picsum.photos/200/100");</code></pre>
+      <div class="example bg-image">Example</div>
+      <pre><code class="language-css">background: url("https://picsum.photos/200/100") no-repeat center/cover;</code></pre>
+      <div class="example bg-shorthand">Example</div>
+    </section>
+
+    <section id="border">
+      <h2>Border</h2>
+      <pre><code class="language-css">border: 3px solid black;</code></pre>
+      <div class="example border-basic">Example</div>
+      <pre><code class="language-css">border-radius: 20px;</code></pre>
+      <div class="example border-radius">Example</div>
+    </section>
+
+    <section id="margin">
+      <h2>Margin & Margin Collapse</h2>
+      <pre><code class="language-css">margin: 30px;</code></pre>
+      <div class="example margin-basic">Example</div>
+      <div class="margin-collapse-container">
+        <div class="mc-box mc-one">Box 1</div>
+        <div class="mc-box mc-two">Box 2</div>
+      </div>
+    </section>
+
+    <section id="padding">
+      <h2>Padding</h2>
+      <pre><code class="language-css">padding: 20px;</code></pre>
+      <div class="example padding-basic">Example</div>
+    </section>
+
+    <section id="boxmodel">
+      <h2>Box Model</h2>
+      <div class="box-model">Content Area</div>
+    </section>
+
+    <section id="text">
+      <h2>Text & Font</h2>
+      <pre><code class="language-css">color: darkred; text-align: center;</code></pre>
+      <p class="text-basic">Colored & centered text</p>
+      <pre><code class="language-css">font-family: "Courier New", monospace;</code></pre>
+      <p class="font-family">Font Family Example</p>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <pre><code class="language-css">list-style-type: square;</code></pre>
+      <ul class="list-type">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </section>
+
+    <section id="tables">
+      <h2>Tables</h2>
+      <table class="table-basic">
+        <tr><th>Name</th><th>Age</th><th>City</th></tr>
+        <tr><td>Alice</td><td>24</td><td>London</td></tr>
+        <tr><td>Bob</td><td>30</td><td>New York</td></tr>
+      </table>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <a href="#" class="link-basic">Basic Link</a>
+      <a href="#" class="link-hover">Hover Link</a>
+      <a href="#tables" class="link-visited">Visited Link</a>
+    </section>
+
+    <section id="display">
+      <h2>Display & Position</h2>
+      <pre><code class="language-css">display: block;</code></pre>
+      <span class="disp-block">Block</span>
+      <span>Inline</span>
+    </section>
+
+    <section id="pseudo">
+      <h2>Pseudo-classes & Pseudo-elements</h2>
+      <button class="btn-hover">Hover Me</button>
+      <p class="pseudo-demo">Hello World</p>
+    </section>
+
+    <section id="nav">
+      <h2>Navigation Bar</h2>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+
+    <section id="gallery">
+      <h2>Image Gallery & Sprites</h2>
+      <div class="gallery">
+        <img src="https://picsum.photos/150/100?1" alt="Image 1" />
+        <img src="https://picsum.photos/150/100?2" alt="Image 2" />
+      </div>
+    </section>
+
+    <section id="form">
+      <h2>Form Styling</h2>
+      <form class="form-demo">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+        <label>Message:</label>
+        <textarea placeholder="Your message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Cheat Sheet</p>
+  </footer>
+</body>
+</html>

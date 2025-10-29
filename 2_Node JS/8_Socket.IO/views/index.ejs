@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Socket.IO Chat Rooms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body
+    class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen"
+  >
+    <div id="joinContainer" class="text-center">
+      <h1 class="text-3xl font-bold mb-4">💬 Join a Chat Room</h1>
+      <input
+        id="username"
+        placeholder="Enter your name"
+        class="p-2 text-black rounded"
+      />
+      <input
+        id="room"
+        placeholder="Enter room name"
+        class="p-2 text-black rounded"
+      />
+      <button id="joinBtn" class="bg-blue-500 p-2 rounded text-white mt-2">
+        Join
+      </button>
+    </div>
+
+    <div id="chatContainer" class="hidden w-1/2 bg-gray-800 rounded-lg p-4">
+      <h2 id="roomName" class="text-xl mb-2"></h2>
+      <div
+        id="messages"
+        class="h-64 overflow-y-auto border p-2 mb-2 bg-gray-700 rounded"
+      ></div>
+      <div class="flex">
+        <input
+          id="msgInput"
+          placeholder="Type message..."
+          class="flex-grow p-2 text-black rounded-l"
+        />
+        <button id="sendBtn" class="bg-green-500 p-2 rounded-r">Send</button>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+  </body>
+</html>

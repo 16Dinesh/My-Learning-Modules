@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      gap: 50px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 2px dashed #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .box.dragover {
+      background-color: #e0ffe0;
+    }
+
+    .draggable {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: grab;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="dropzone1">
+      <div class="draggable" draggable="true" id="drag1">Drag Me</div>
+    </div>
+    <div class="box" id="dropzone2">
+      Drop Here
+    </div>
+  </div>
+
+  <script>
+    const dragItem = document.getElementById("drag1");
+    const dropZones = document.querySelectorAll(".box");
+
+    dragItem.addEventListener("dragstart", (e) => {
+      e.dataTransfer.setData("text/plain", e.target.id);
+    });
+
+    dropZones.forEach(zone => {
+      zone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        zone.classList.add("dragover");
+      });
+
+      zone.addEventListener("dragleave", () => {
+        zone.classList.remove("dragover");
+      });
+
+      zone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        zone.classList.remove("dragover");
+        const id = e.dataTransfer.getData("text/plain");
+        const draggedElement = document.getElementById(id);
+        zone.appendChild(draggedElement);
+      });
+    });
+  </script>
+</body>
+</html>

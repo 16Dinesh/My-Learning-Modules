@@ -1,0 +1,50 @@
+// -->    // to start in terminal
+
+// use randdabase  // use or create or swtich the database
+
+//  show dbs  // show all databases
+
+// db  // show current database
+
+// db.collection.insertOne({k:V})  //  to insert one data into database
+
+// db.collection.insertMany([{K:V}])  // to insert Many data into database
+
+// db.collection.find() // to read all the data in the database
+
+// db.collection.findOne({K:V})  // to find One specific queries.
+
+//  db.collection.find({K:V})  // to find specific queries 
+
+<!-- operators in find() --->
+
+db.collection.find( {marks : {$gt: 75}} )  // $gt is the greater-than 75  
+
+db.collection.find( {city: { $in: ["hyd" , "knl"]}} )   // $in find to search any one hyd or knl or both
+
+db.collection.find( {$or: [ {marks: {$gt: 75}, {city: "HYD"}} ]} )  // $or  is and OR operator 
+
+<!-- Update --->
+                        conditon     $set is commonly used
+db.collection.updateOne({K:V}    , {$set: {marks:99}})
+
+$addField  --> add key
+
+db.collection.updateMany() 
+
+db.collection.replaceOne({K:V})
+
+
+<!-- Nesting --->
+
+// to find Nesting
+
+// db.collection.findOne( {"test": "rand"} )
+
+<!-- Delete --->
+
+db.collection.deleteOne( {K:V} )   // to delete one data in collection
+
+db.collection.deleteMany( {K:V} )  // to delete many data in collection 
+
+db.dropDatabase()   // to delete the database

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Storage Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      gap: 10px;
+    }
+    input {
+      padding: 5px;
+      font-size: 16px;
+    }
+    button {
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Web Storage Example</h2>
+
+  <input type="text" id="inputData" placeholder="Enter some text">
+  <div>
+    <button onclick="saveLocal()">Save to Local Storage</button>
+    <button onclick="saveSession()">Save to Session Storage</button>
+  </div>
+
+  <div>
+    <button onclick="showLocal()">Show Local Storage</button>
+    <button onclick="showSession()">Show Session Storage</button>
+  </div>
+
+  <div>
+    <button onclick="clearLocal()">Clear Local Storage</button>
+    <button onclick="clearSession()">Clear Session Storage</button>
+  </div>
+
+  <p id="output"></p>
+
+  <script>
+    const input = document.getElementById('inputData');
+    const output = document.getElementById('output');
+
+    function saveLocal() {
+      const value = input.value;
+      if(value) {
+        localStorage.setItem('myData', value);
+        output.textContent = 'Saved to Local Storage!';
+        input.value = '';
+      }
+    }
+
+    function saveSession() {
+      const value = input.value;
+      if(value) {
+        sessionStorage.setItem('myData', value);
+        output.textContent = 'Saved to Session Storage!';
+        input.value = '';
+      }
+    }
+
+    function showLocal() {
+      const value = localStorage.getItem('myData');
+      output.textContent = value ? `Local Storage: ${value}` : 'No data in Local Storage.';
+    }
+
+    function showSession() {
+      const value = sessionStorage.getItem('myData');
+      output.textContent = value ? `Session Storage: ${value}` : 'No data in Session Storage.';
+    }
+
+    function clearLocal() {
+      localStorage.removeItem('myData');
+      output.textContent = 'Local Storage cleared!';
+    }
+
+    function clearSession() {
+      sessionStorage.removeItem('myData');
+      output.textContent = 'Session Storage cleared!';
+    }
+  </script>
+</body>
+</html>

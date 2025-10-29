@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All ABOUT CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <p class="intro">This file is all about CSS - Cascading Style Sheet</p>
+    </div>
+    <hr />
+    <div>
+      <p class="title">Syntax For CSS</p>
+      <p>
+        Selector { <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;property: value;<br />
+        }
+      </p>
+    </div>
+    <hr />
+    <div>
+      <p class="title">Ways to Apply CSS</p>
+      <ul>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS Selectors</p>
+      <ul>
+        <li>Universal Selector (*)</li>
+        <li>Type Selector (element)</li>
+        <li>Class Selector (.class)</li>
+        <li>ID Selector (#id)</li>
+        <li>Attribute Selector ([attribute])</li>
+        <li>Group Selector (selector1, selector2)</li>
+        <li>Descendant Selector (ancestor descendant)</li>
+        <li>Child Selector (parent > child)</li>
+        <li>Adjacent Sibling Selector (element + element)</li>
+        <li>General Sibling Selector (element ~ element)</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <p class="title">Common CSS Properties</p>
+      <ul>
+        <li>color</li>
+        <li>background-color</li>
+        <li>font-size</li>
+        <li>font-family</li>
+        <li>margin</li>
+        <li>padding</li>
+        <li>border</li>
+        <li>width</li>
+        <li>height</li>
+        <li>text-align</li>
+        <li>display</li>
+        <li>position</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS - Background</p>
+      <p>Background properties with examples:</p>
+      <ul>
+        <li><code>background-color</code> → Sets background color</li>
+        <div class="bg-example bg-color">Example</div>
+
+        <li><code>background-image</code> → Sets an image as background</li>
+        <div class="bg-example bg-image">Example</div>
+
+        <li><code>background-repeat</code> → Controls repeating of image</li>
+        <div class="bg-example bg-repeat">Example</div>
+
+        <li><code>background-position</code> → Sets image position</li>
+        <div class="bg-example bg-position">Example</div>
+
+        <li><code>background-size</code> → Sets image size</li>
+        <div class="bg-example bg-size">Example</div>
+
+        <li><code>background-attachment</code> → Scroll or fixed</li>
+        <div class="bg-example bg-attachment">Example</div>
+
+        <li><code>background-clip</code> → Extent of background painting</li>
+        <div class="bg-example bg-clip">Example</div>
+
+        <li><code>background-origin</code> → Origin for positioning</li>
+        <div class="bg-example bg-origin">Example</div>
+
+        <li><code>background-blend-mode</code> → Blend effect</li>
+        <div class="bg-example bg-blend">Example</div>
+
+        <li><code>background (shorthand)</code> → All in one</li>
+        <div class="bg-example bg-shorthand">Example</div>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS - Border</p>
+      <ul>
+        <li><code>border</code> → Sets border in one shorthand</li>
+        <div class="box border-basic">Example</div>
+
+        <li>
+          <code>border-style</code> → solid, dashed, dotted, double, groove,
+          ridge, inset, outset
+        </li>
+        <div class="box border-styles">Example</div>
+
+        <li><code>border-width</code> → thickness of border</li>
+        <div class="box border-width">Example</div>
+
+        <li><code>border-color</code> → color of border</li>
+        <div class="box border-color">Example</div>
+
+        <li><code>border-radius</code> → rounded corners</li>
+        <div class="box border-radius">Example</div>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Margin</p>
+      <ul>
+        <li><code>margin</code> → space outside element</li>
+        <div class="box margin-basic">Example</div>
+
+        <li>
+          <code>margin-top / margin-right / margin-bottom / margin-left</code>
+        </li>
+        <div class="box margin-sides">Example</div>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Margin Collapse</p>
+      <p>
+        When two vertical margins meet, they collapse into one (the larger one).
+      </p>
+      <div class="margin-collapse-container">
+        <div class="mc-box mc-one">Box 1</div>
+        <div class="mc-box mc-two">Box 2</div>
+      </div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Padding</p>
+      <ul>
+        <li><code>padding</code> → space inside element</li>
+        <div class="box padding-basic">Example</div>
+
+        <li>
+          <code
+            >padding-top / padding-right / padding-bottom / padding-left</code
+          >
+        </li>
+        <div class="box padding-sides">Example</div>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS - Box Model</p>
+      <p>
+        Every element in CSS is a rectangular box that consists of:
+        <strong>Content → Padding → Border → Margin</strong>.
+      </p>
+      <div class="box-model">Content Area</div>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS - Outline</p>
+      <ul>
+        <li><code>outline</code> → Line outside the border</li>
+        <div class="outline-basic">Example</div>
+
+        <li><code>outline-offset</code> → Space between border & outline</li>
+        <div class="outline-offset">Example</div>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Text</p>
+      <ul>
+        <li><code>color</code>, <code>text-align</code></li>
+        <p class="text-basic">This is colored & centered text</p>
+
+        <li>
+          <code>text-decoration</code> → underline, overline, line-through
+        </li>
+        <p class="text-decoration">Decorated text</p>
+
+        <li><code>text-transform</code> → uppercase, lowercase, capitalize</li>
+        <p class="text-transform">transformed text</p>
+
+        <li><code>text-shadow</code></li>
+        <p class="text-shadow">Shadowed Text</p>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Font</p>
+      <ul>
+        <li><code>font-family</code></li>
+        <p class="font-family">Font Family Example</p>
+
+        <li>
+          <code>font-size</code>, <code>font-style</code>,
+          <code>font-weight</code>
+        </li>
+        <p class="font-styles">Styled Font Example</p>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Lists</p>
+      <ul>
+        <li><code>list-style-type</code> → disc, circle, square, decimal</li>
+        <ul class="list-type">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+
+        <li><code>list-style-image</code> → custom image marker</li>
+        <ul class="list-image">
+          <li>Item A</li>
+          <li>Item B</li>
+        </ul>
+
+        <li><code>list-style-position</code> → inside / outside</li>
+        <ul class="list-position">
+          <li>First</li>
+          <li>Second</li>
+        </ul>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title" id="tables">CSS - Tables</p>
+      <table class="table-basic">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+        <tr>
+          <td>Alice</td>
+          <td>24</td>
+          <td>London</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>30</td>
+          <td>New York</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Links</p>
+      <p>
+        <a href="#" class="link-basic">Basic Link</a><br />
+        <a href="#" class="link-hover">Hover Link</a><br />
+        <a href="#tables" class="link-visited">Visited Link</a>
+      </p>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS - Display</p>
+      <ul>
+        <li><code>display: block;</code></li>
+        <span class="disp-block">Block</span
+        ><span>Next</span>
+
+        <li><code>display: inline;</code></li>
+        <div class="disp-inline">Inline</div>
+        <div class="disp-inline">Next</div>
+
+        <li><code>display: inline-block;</code></li>
+        <div class="disp-inlineblock">Inline-Block</div>
+        <div class="disp-inlineblock">Next</div>
+
+        <li><code>display: none;</code> (hidden)</li>
+        <div class="disp-none">You can’t see me</div>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Position</p>
+      <div class="pos-container">
+        <div class="pos-static">Static</div>
+        <div class="pos-relative">Relative</div>
+        <div class="pos-absolute">Absolute</div>
+        <div class="pos-fixed">Fixed</div>
+        <div class="pos-sticky">Sticky</div>
+      </div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Z-Index</p>
+      <div class="z-container">
+        <div class="z-box z1">z-index: 1</div>
+        <div class="z-box z2">z-index: 2</div>
+      </div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Overflow</p>
+      <div class="overflow-box overflow-auto">
+        Auto Overflow Content... Auto Overflow Content... Auto Overflow
+        Content...
+      </div>
+      <div class="overflow-box overflow-hidden">
+        Hidden Overflow Content... Hidden Overflow Content... Hidden Overflow
+        Content...
+      </div>
+      <div class="overflow-box overflow-scroll">
+        Scroll Overflow Content... Scroll Overflow Content... Scroll Overflow
+        Content...
+      </div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Float & Clear</p>
+      <div class="float-container">
+        <img src="https://picsum.photos/80" alt="float" class="float-left" />
+        <p>
+          This text flows around the floated image. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+        <div class="clear-both">Cleared text starts below float.</div>
+      </div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Combinators</p>
+      <ul>
+        <li>
+          <code>Descendant (div p)</code> → All &lt;p&gt; inside &lt;div&gt;
+        </li>
+        <li>
+          <code>Child (div > p)</code> → Direct child &lt;p&gt; of &lt;div&gt;
+        </li>
+        <li>
+          <code>Adjacent Sibling (h1 + p)</code> → &lt;p&gt; right after
+          &lt;h1&gt;
+        </li>
+        <li>
+          <code>General Sibling (h1 ~ p)</code> → All &lt;p&gt; after &lt;h1&gt;
+        </li>
+      </ul>
+      <div class="comb-container">
+        <h1>Heading</h1>
+        <p>Paragraph after h1 (adjacent + general)</p>
+        <p>Another paragraph (general)</p>
+        <section>
+          <p>Inside section (descendant)</p>
+        </section>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS - Pseudo-classes</p>
+      <ul>
+        <li>:hover → Apply style on mouse hover</li>
+        <li>:active → When element is clicked</li>
+        <li>:focus → When input is focused</li>
+        <li>:nth-child(n) → Select based on child position</li>
+      </ul>
+      <button class="btn-hover">Hover Me</button>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Pseudo-elements</p>
+      <ul>
+        <li>::before → Insert content before element</li>
+        <li>::after → Insert content after element</li>
+        <li>::first-letter → Style first letter</li>
+        <li>::selection → Style highlighted text</li>
+      </ul>
+      <p class="pseudo-demo">Hello World</p>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Opacity</p>
+      <div class="opacity-demo">Opacity 0.5</div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Attribute Selectors</p>
+      <ul>
+        <li>[attr] → element with attribute</li>
+        <li>[attr="value"] → exact match</li>
+        <li>[attr^="value"] → starts with</li>
+        <li>[attr$="value"] → ends with</li>
+        <li>[attr*="value"] → contains</li>
+      </ul>
+      <a href="https://example.com" target="_blank">Example Link</a>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Counters</p>
+      <ol class="counter-demo">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+      </ol>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Units</p>
+      <p class="units-demo">
+        This text uses <code>em</code>, <code>rem</code>, <code>px</code>,
+        <code>%</code>, <code>vh</code>, <code>vw</code>.
+      </p>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Specificity & !important</p>
+      <p class="specificity">This is styled using conflicting rules.</p>
+    </div>
+    <hr />
+    <div>
+      <p class="title">CSS - Navigation Bar</p>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Image Gallery</p>
+      <div class="gallery">
+        <img src="../../images/download.jpg" alt="Image 1" />
+        <img src="../../images/download.jpg" alt="Image 2" />
+        <img src="../../images/download.jpg" alt="Image 3" />
+        <img src="../../images/download.jpg" alt="Image 4" />
+      </div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Image Sprites</p>
+      <div class="sprite icon1"></div>
+      <div class="sprite icon2"></div>
+      <div class="sprite icon3"></div>
+    </div>
+
+    <hr />
+    <div>
+      <p class="title">CSS - Form Styling</p>
+      <form class="form-demo">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" />
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" />
+
+        <label>Message:</label>
+        <textarea placeholder="Your message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <hr />
+    <section id="optimizations">
+      <h2 class="title">CSS - Optimizations & Best Practices</h2>
+      <ul>
+        <li>
+          <strong>Use shorthand properties:</strong> Combine margin, padding,
+          border, background, font for cleaner code.
+        </li>
+        <li>
+          <strong>Minimize CSS file size:</strong> Remove unused styles and
+          whitespace, use minified CSS for production.
+        </li>
+        <li>
+          <strong>Use classes over IDs for styling:</strong> Classes have better
+          reusability and avoid specificity conflicts.
+        </li>
+        <li>
+          <strong>Use external CSS:</strong> Keeps HTML clean and enables
+          caching.
+        </li>
+        <li>
+          <strong>Reduce reflows & repaints:</strong> Avoid excessive DOM
+          manipulation and complex CSS selectors.
+        </li>
+        <li>
+          <strong>Use CSS variables:</strong> For colors, spacing, and fonts to
+          maintain consistency.
+        </li>
+        <li>
+          <strong>Organize CSS:</strong> Group by components or sections, use
+          comments, and consistent naming.
+        </li>
+        <li>
+          <strong>Responsive design:</strong> Use relative units (%, em, rem,
+          vh, vw) and media queries for mobile-friendly layouts.
+        </li>
+        <li>
+          <strong>Use modern layout techniques:</strong> Flexbox and Grid
+          instead of floats or inline-block hacks.
+        </li>
+        <li>
+          <strong>Use sprites or icon fonts:</strong> Reduce HTTP requests for
+          better performance.
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

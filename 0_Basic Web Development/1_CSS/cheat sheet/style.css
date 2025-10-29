@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9fafb;
+}
+header {
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+nav a:hover {
+  background: #1e293b;
+}
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  color: #0f172a;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+pre {
+  background: #1e293b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+code {
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+.example {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 10px 0;
+  border: 2px solid #333;
+  color: white;
+}
+.bg-color {
+  background-color: teal;
+}
+.bg-image {
+  background-image: url("https://picsum.photos/200/100");
+  background-size: cover;
+}
+.bg-shorthand {
+  background: url("https://picsum.photos/200/100") no-repeat center/cover;
+}
+.border-basic {
+  border: 3px solid black;
+}
+.border-radius {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.margin-basic {
+  background-color: lightgreen;
+  margin: 30px;
+}
+.margin-collapse-container {
+  background: #f0f0f0;
+  padding: 10px;
+}
+.mc-box {
+  background: skyblue;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.mc-one {
+  margin-bottom: 40px;
+}
+.mc-two {
+  margin-top: 60px;
+}
+.padding-basic {
+  background: lightyellow;
+  padding: 20px;
+}
+.box-model {
+  width: 150px;
+  height: 80px;
+  background: lightblue;
+  padding: 20px;
+  border: 10px solid navy;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.text-basic {
+  text-align: center;
+  color: darkred;
+}
+.font-family {
+  font-family: "Courier New", monospace;
+}
+.list-type {
+  list-style-type: square;
+}
+.table-basic {
+  border-collapse: collapse;
+  width: 60%;
+  margin-top: 10px;
+}
+.table-basic th,
+.table-basic td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
+}
+.table-basic th {
+  background: lightgray;
+}
+.link-basic {
+  color: blue;
+  text-decoration: none;
+}
+.link-hover:hover {
+  color: red;
+  text-decoration: underline;
+}
+.link-visited:visited {
+  color: purple;
+}
+.disp-block {
+  display: block;
+  background: lightblue;
+  margin: 5px 0;
+}
+.btn-hover {
+  background: steelblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn-hover:hover {
+  background: darkblue;
+}
+.pseudo-demo::before {
+  content: "👉 ";
+  color: red;
+}
+.pseudo-demo::after {
+  content: " 👈";
+  color: green;
+}
+.pseudo-demo::first-letter {
+  font-size: 2rem;
+  color: purple;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0f172a;
+  color: white;
+  border-top: 1px solid #ccc;
+}
+.navbar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.navbar a:hover {
+  background: #1e293b;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.form-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.form-demo input,
+.form-demo textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-demo button {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-demo button:hover {
+  background: #1e293b;
+}

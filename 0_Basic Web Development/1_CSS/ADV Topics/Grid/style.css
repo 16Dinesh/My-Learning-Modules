@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9fafb;
+}
+h1,
+h2 {
+  text-align: center;
+}
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  background: white;
+}
+
+.box {
+  background: #059669;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/* Grid Examples */
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-areas {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 200px auto;
+  gap: 10px;
+}
+
+.header {
+  grid-area: header;
+  background: #2563eb;
+}
+.nav {
+  grid-area: nav;
+  background: #9333ea;
+}
+.main {
+  grid-area: main;
+  background: #059669;
+}
+.aside {
+  grid-area: aside;
+  background: #f59e0b;
+}
+.footer {
+  grid-area: footer;
+  background: #dc2626;
+}
+
+.grid-areas > * {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+}

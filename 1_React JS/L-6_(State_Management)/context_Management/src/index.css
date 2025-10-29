@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.toggle-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.toggle-btn.light {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.toggle-btn.dark {
+  background-color: #ddd;
+  color: #000;
+}
+
+.toggle-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
