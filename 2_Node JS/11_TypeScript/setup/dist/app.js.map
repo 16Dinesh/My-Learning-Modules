@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "app.js",
+  "sourceRoot": "",
+  "sources": [
+    "../src/app.ts"
+  ],
+  "names": [],
+  "mappings": ";;AAAA,OAAO,CAAC,GAAG,CAAC,2BAA2B,CAAC,CAAC;AAEzC,SAAS,OAAO,CAAC,IAAY;IAC3B,OAAO,eAAe,IAAI,EAAE,CAAC;AAC/B,CAAC;AAED,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,QAAQ,CAAC,CAAC,CAAC"
+}

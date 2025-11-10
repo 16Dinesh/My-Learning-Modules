@@ -9,14 +9,15 @@ const app = express();
 // Middleware
 app.use(express.json());
 
+// Connect to MongoDB
+connectDB();
+
 // Routes
 app.use("/api/users", userRoutes);
 
 // Error handling middleware
 app.use(errorHandler);
 
-// Connect to MongoDB
-connectDB();
 
 // Start server
 const PORT = process.env.PORT || 3000;

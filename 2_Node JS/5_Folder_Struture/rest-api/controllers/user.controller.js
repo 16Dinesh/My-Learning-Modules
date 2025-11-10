@@ -1,9 +1,14 @@
 const User = require("../models/user.model");
+// any Imports come Here!
 
 // GET all users
 exports.getUsers = async (req, res, next) => {
   try {
+
+
     // logic code goes here
+
+
   } catch (err) {
     next(err);
   }
@@ -12,7 +17,11 @@ exports.getUsers = async (req, res, next) => {
 // GET one user
 exports.getUserById = async (req, res, next) => {
   try {
+
+
     // logic code goes here
+
+
   } catch (err) {
     next(err);
   }
@@ -21,7 +30,11 @@ exports.getUserById = async (req, res, next) => {
 // CREATE user
 exports.createUser = async (req, res, next) => {
   try {
+
+
     // logic code goes here
+
+
   } catch (err) {
     next(err);
   }
@@ -30,7 +43,11 @@ exports.createUser = async (req, res, next) => {
 // UPDATE user
 exports.updateUser = async (req, res, next) => {
   try {
+
+
     // logic code goes here
+
+
   } catch (err) {
     next(err);
   }
@@ -39,10 +56,14 @@ exports.updateUser = async (req, res, next) => {
 // DELETE user
 exports.deleteUser = async (req, res, next) => {
   try {
+
+
    // logic code goes here
+
+
   } catch (err) {
     next(err);
   }
 };
 
-// module.exports = {deleteUser, updateUser, createUser, getUserById, getUsers}
+module.exports = {deleteUser, updateUser, createUser, getUserById, getUsers}
