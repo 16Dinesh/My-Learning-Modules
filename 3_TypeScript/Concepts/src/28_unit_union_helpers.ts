@@ -3,7 +3,6 @@
 type StatusN10 = "pending" | "success" | "error";
 type NonErrorStatus = Exclude<StatusN10, "error">;
 
-
 //Extract<T, U> -> keeps only matching types from a union
 
 type Events = "click" | "scroll" | "keydown";
@@ -41,3 +40,23 @@ function square(num: CleanNumber) {
 
 square(10);
 // square(null)
+
+// identity() --> to prevent the type Exactly
+
+// makeArray() --> Wrap Anything into Array
+
+// pluck() --> Extract a field from each Object
+
+// getProp()
+
+// serProp()
+
+//-------------
+
+//ADV
+
+// pipe() --> functions composition helpers
+
+// memoize() --> cache function helpers
+
+// once() --> Execute a function only one time
